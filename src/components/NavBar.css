@@ -1,0 +1,29 @@
+.container{
+    display: flex;
+    background-color: black;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.listContainer{
+    display: flex;
+    list-style: none;
+    
+}
+
+.listItem{
+    justify-content: space-around;
+    margin-right: 30px;
+}
+
+.anchorNavBar{
+    text-decoration: none;
+    color: white;
+}
+
+.anchorNavBar:hover{
+    color:aquamarine;
+}
