@@ -1,5 +1,6 @@
 import './NavBar.css';
-import { Icon } from 'semantic-ui-react';
+
+import ItemCounter  from '../ItemCounter/ItemCounter';
 
 const NavBar = () => {
     return(
@@ -11,8 +12,9 @@ const NavBar = () => {
                 <li className="listItem"><a href="#" className="anchorNavBar">BLACK FRIDAY</a></li>
                 <li className="listItem"><a href="#" className="anchorNavBar">SALE</a></li>
             </ul>
-            <div className="shoppingCart">
-            <Icon name='cart' />
+            
+            <div>
+            <ItemCounter />
             </div>
        </nav> 
        
@@ -22,5 +24,8 @@ const NavBar = () => {
 export default NavBar; 
 
 
-
-
+/*<div className="shoppingCart">
+<Icon name='cart' />
+<ItemCounter />
+</div>
+*/

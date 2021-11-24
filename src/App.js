@@ -1,13 +1,12 @@
 
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
 
 //componentes
 import NavBar from './components/NavBar/NavBar';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 
-class App extends Component {
-  render() {
+const App = () => {
     return(
       <div className="App">
         <NavBar/>
@@ -20,9 +19,9 @@ class App extends Component {
         </div>      
       </div>
     )
-  };
 }
 
 export default App;
+
 
 

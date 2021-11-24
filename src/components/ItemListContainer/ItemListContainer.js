@@ -4,6 +4,7 @@ import { Card, Image, Button, Icon } from 'semantic-ui-react'
 import './ItemListContainer.css';
 
 const ItemListContainer = ({ img, description, price, note }) => (
+    
   <div className='itemListContainer'>
         <Card>
             <Image src={img} wrapped ui={false} />
