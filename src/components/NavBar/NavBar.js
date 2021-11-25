@@ -14,7 +14,7 @@ const NavBar = () => {
             </ul>
             
             <div>
-            <ItemCounter />
+            <ItemCounter stock={5} initial={1}/>
             </div>
        </nav> 
        

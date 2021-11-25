@@ -2,12 +2,19 @@ import React, { useState } from 'react'
 import { Button, Icon } from 'semantic-ui-react'
 import './ItemCounter.css';
 
-const ItemCounter = () => {
+const ItemCounter = ({stock, initial}) => {
 
-    const[counter, setCounter] = useState(0);
+    const[counter, setCounter] = useState(initial);
 
     const handlerCounterUp = () => {
-        setCounter(counter + 1);
+        if (counter < stock){
+            setCounter(counter + 1);
+        } else if (counter === stock) {
+            setCounter(stock);
+            alert("Désolé, il n'y a plus de stock");
+        }  else {
+            setCounter(stock);
+        }  
     }
 
     const handlerCounterDown = () => {
