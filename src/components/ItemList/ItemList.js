@@ -3,6 +3,9 @@ import Item from '../Item/Item';
 
 import './ItemList.css';
 
+//LINK ROUTER DOM
+import { Link } from 'react-router-dom';
+
 const ItemList = () => {
 	const [burgers, setBurgers] = useState([]);
 
@@ -17,11 +20,21 @@ const ItemList = () => {
 		<div className='ItemList'>
 			<div className='Item'>
 				{burgers.map((burger) => {
-					return <Item data={burger} key={burger.id} />;
+					return(
+						<div key={burger.id}>
+							<Link to={`/detail/${burger.id}`}>
+							<Item data={burger} />;
+							</Link>
+						</div>
+					) 
 				})}
 			</div>
 		</div>
 	);
+
+
+
 };
 
 export default ItemList;
+

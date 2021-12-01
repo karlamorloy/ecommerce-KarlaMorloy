@@ -1,4 +1,6 @@
+import React from 'react';
 import './NavBar.css';
+import { Link } from 'react-router-dom';
 
 import ItemCounter  from '../ItemCounter/ItemCounter';
 
@@ -7,10 +9,9 @@ const NavBar = () => {
         
        <nav className="container">
             <ul className="listContainer">
-                <li className="listItem"><a href="#" className="anchorNavBar">NOUVEAUTÉS</a></li>
-                <li className="listItem"><a href="#" className="anchorNavBar">TENDANCES</a></li>
-                <li className="listItem"><a href="#" className="anchorNavBar">BLACK FRIDAY</a></li>
-                <li className="listItem"><a href="#" className="anchorNavBar">SALE</a></li>
+                <Link className="listItem" to='/'>HOME</Link>
+                <Link className="listItem" to='/new'>NEW</Link>
+                <Link className="listItem" to='/sale'>SALE</Link>
             </ul>
             
             <div>

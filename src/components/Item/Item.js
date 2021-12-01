@@ -8,10 +8,6 @@ const Item = ({ data }) => (
   <div className='item'>
         <Card>
             <Card.Content>            
-            <Card.Description>
-                {data.description}
-            </Card.Description>
-            <p></p>
             <Card.Header>{data.name}</Card.Header>
             <Card.Meta>
             <span className='date'>{data.ingredients.length}</span>

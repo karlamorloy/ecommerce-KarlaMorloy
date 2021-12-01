@@ -3,13 +3,19 @@ import ItemList from '../ItemList/ItemList';
 
 //import './ItemListContainer.css';
 
-const ItemListContainer = () => (
+const ItemListContainer = () => {
+
+  return(
     
   <div className='itemListContainer'>
-       <ItemList /> 
+    <h1>Burger House</h1>
+    <h2>Mouthwatering delicious</h2>
+    <p></p>
+    <ItemList /> 
   </div>
+  )
 
-)
+  }
 
 
 export default ItemListContainer
